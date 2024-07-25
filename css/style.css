@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f3e5d8;
     font-family: "DM Serif Display", serif;
@@ -49,7 +53,7 @@ h3 {
 .container {
     border: 1px solid;
     padding: 8px 12px;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: var(--bg-color);
 }
@@ -93,6 +97,15 @@ nav ul {
     text-align: center;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 li {
     margin: 0.7rem;
 }
@@ -127,7 +140,7 @@ td, th {
     margin: 5px;
 }
 
-.receta1, .receta2, .receta3 {
+.receta1, .receta2, .receta3, .receta4 {
     background-color: var(--text-color);
     padding: 20px;
     margin: 15px;
@@ -140,4 +153,22 @@ td, th {
     display: flex;
     align-items: center;
     color: var(--text-color);
+}
+
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #0a21a5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#backToTop:hover {
+    background-color: #555;
 }

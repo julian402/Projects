@@ -28,14 +28,15 @@
 
       <nav>
         <ul>
-          <li class="uno">Receta 1</li>
-          <li class="uno">Receta 2</li>
-          <li class="uno">Receta 3</li>
+          <li class="uno"><a href="#receta1">Receta 1</a></li>
+          <li class="uno"><a href="#receta2">Receta 2</a></li>
+          <li class="uno"><a href="#receta3">Receta 3</a></li>
+          <li class="uno"><a href="#receta4">Receta 4</a></li>
         </ul>
       </nav>
 
       <main>
-        <section class="receta receta1">
+        <section class="receta receta1" id="receta1">
           <h2>Receta 1</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
@@ -75,7 +76,7 @@
           </div>
         </section>
 
-        <section class="receta receta2">
+        <section class="receta receta2" id="receta2">
           <h2>Receta 2</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
@@ -116,7 +117,7 @@
           </div>
         </section>
 
-        <section class="receta receta3">
+        <section class="receta receta3" id="receta3">
           <h2>Receta 3</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
@@ -157,6 +158,49 @@
         </section>
       </main>
 
+      <section class="receta receta4" id="receta4">
+        <h2>Receta 4</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
+          consectetur eius dolores ullam dolorum. Quia odit quas possimus
+          ratione ea quibusdam laborum aperiam necessitatibus maiores!
+          Praesentium mollitia libero eius repellat.
+        </p>
+        <div>
+          <h3>Ingredientes</h3>
+          <ul>
+            <li>Ingrediente 1</li>
+            <li>Ingrediente 2</li>
+            <li>Ingrediente 3</li>
+            <li>Ingrediente 4</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Valores Nutricionales</h3>
+          <table class="valores-nutricionales">
+            <tr>
+              <th>Calorias</th>
+              <td>277 Kcal</td>
+            </tr>
+            <tr>
+              <th>Carbohidratos</th>
+              <td>0g</td>
+            </tr>
+            <tr>
+              <th>Proteinas</th>
+              <td>20g</td>
+            </tr>
+            <tr>
+              <th>Grasas</th>
+              <td>277 Kcal</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      
+
       <footer>
         <div class="logo">
           <img src="img/img2.png" alt="BitCook" />
@@ -164,5 +208,9 @@
         <p class="pie-pagina">© 2024 Bogota Julian Corredor</p>
       </footer>
     </div>
+
+    <button id="backToTop">^</button>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

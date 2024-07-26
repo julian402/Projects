@@ -50,8 +50,14 @@ h3 {
     align-items: center;
 }
 
+/* .header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+} */
+
 .container {
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 8px 12px;
     max-width: 900px;
     margin: 0 auto;
@@ -171,4 +177,41 @@ td, th {
 
 #backToTop:hover {
     background-color: #555;
+}
+
+
+@media screen and (max-width: 600px) {
+    #im{
+        display: none;
+    }
+    .imga img{
+        display: none;
+    }
+
+    #first, .uno{
+        flex-direction: column; 
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .uno{
+        padding: 20px;
+    }
+
+    h2{
+        font-size: 40px;
+        text-wrap: balance;
+    }
+
+    .valores-nutricionales td {
+        text-align: right;
+        text-wrap: balance;
+    }
+
+    #backToTop{
+        background-color: transparent;
+        color: green;    
+    }
 }

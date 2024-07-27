@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3e5d8;
+    font-family: "DM Serif Display", serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+:root {
+    --primary-color: #255538;
+    --secondary-color: #7e4333;
+    --bg-color: #f3e5d8;
+    --text-color: #ffffff;
+    --border-radius: 10px;
+}
+
+
+#grid-continer{
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:  60px 1fr 1fr 60px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 10px auto;
+    
+
+}
+
+header, footer{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: 1 / 1 / 2 /4;
+}
+
+.pie-pagina {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#img img{
+    height: 210px;
+    width: 98%;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+main{
+    background-color: var(--text-color);
+    grid-area: 2 / 1 / 4 / 1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.instructions{
+    padding-left: 30px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
+
+h3{
+    color: var(--secondary-color);
+    padding-bottom: 8px;
+}
+
+#descr{
+    margin: 10px;
+}
+
+#inst{
+    background-color: rgb(247, 240, 244);
+    margin-top: 15px;
+    margin: 10px;
+    padding: 15px;
+
+    
+}
+
+#inst nav ul{
+    padding-left: 30px;
+    
+}
+
+section{
+    background-color: var(--text-color);
+    border-radius: 10px;
+    padding: 25px;
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.valores-nutricionales{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-collapse: collapse;
+    padding-bottom: 15px ;
+    
+}
+td, th {
+    border-bottom: 1px solid #000;
+    text-align: left;
+    padding-top: 10px;
+}
+
+td{
+    text-align: right;
+}
+
+ul, li{
+    padding-bottom: 10px;
+    
+}
+
+ul{
+    padding-left: 30px;
+}
+
+aside{
+    background-color: var(--text-color);
+    border-radius: 10px;
+    grid-area: 3 / 2 / 3 / 4;
+}
+
+
+.recipe-preview {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.recipe-preview img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.more-recipes h2{
+    padding-left: 15px;
+}
+
+
+footer{
+    grid-area: 4 / 1 / 4/ 4;
+}

@@ -34,6 +34,10 @@ h2 {
     color: var(--secondary-color);
 }
 
+h2:hover{
+    text-decoration: underline;
+}
+
 h3 {
     color: var(--secondary-color);
     padding-top: 10px;
@@ -104,7 +108,7 @@ nav ul {
 }
 
 a{
-    color: var(--secondary-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 

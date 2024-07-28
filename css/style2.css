@@ -32,12 +32,11 @@ body {
     height: 100vh;
 
     grid-template-columns: 2fr 1fr;
-    grid-template-rows:  60px 1fr 1fr 60px;
+    grid-template-rows:  60px 1fr 1fr 1fr 60px;
     gap: 20px;
     padding: 20px;
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 10px auto;
-    
+    max-width: 1200px;
+    margin: auto;
 
 }
 
@@ -50,16 +49,36 @@ header, footer{
     justify-content: space-between;
     align-items: center;
     grid-area: 1 / 1 / 2 /4;
+    width: 100%;
+
+    
+}
+
+
+.icon  {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-pagina{
+    color: var(--text-color);
+    display: flex;
+    margin-left: 870px;
 }
 
 .pie-pagina {
     display: flex;
     align-items: center;
     color: var(--text-color);
+
 }
 
+
 #img img{
-    height: 210px;
     width: 98%;
     border-radius: 15px;
     margin: 10px;
@@ -70,7 +89,9 @@ main{
     grid-area: 2 / 1 / 4 / 1;
     border-radius: 10px;
     padding: 10px;
-}
+    height: max-content;
+    
+}  
 
 .instructions{
     padding-left: 30px;
@@ -144,6 +165,7 @@ aside{
     background-color: var(--text-color);
     border-radius: 10px;
     grid-area: 3 / 2 / 3 / 4;
+    height: min-content;
 }
 
 

@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #f3e5d8;
+    background-color: var(--bg-color);
     font-family: "DM Serif Display", serif;
     line-height: 1.6;
 }
@@ -20,8 +20,31 @@ body {
     --secondary-color: #7e4333;
     --bg-color: #f3e5d8;
     --text-color: #ffffff;
+    --p-color: #000000;
     --border-radius: 10px;
+    --li-color: #000000;
+    --header-color:#ffffff;
+    --pie-color:#ffffff;
+    --backToTop: #255538;
+    --icon-color: #ffffff;
+    --uno-color: #ffffff;
+
 }
+
+
+.dark-mode{
+    --bg-color: #000000;
+    --text-color: #2f2f2f;
+    --secondary-color : #ffffff;
+    --p-color : #ffffff;
+    --li-color: #ffffff;
+    --header-color: #ffffff;
+    --pie-color:#ffffff;
+    --backToTop: #ffffff;
+    --icon-color: #ffffff;
+    --uno-color: #ffffff;
+}
+
 
 
 h1 {
@@ -44,6 +67,9 @@ h3 {
     padding-bottom: 10px;
 }
 
+p{
+    color: var(--p-color);
+}
 .header, footer {
     background-color: var(--primary-color);
     padding: 10px;
@@ -60,6 +86,9 @@ h3 {
     z-index: 2;
 } */
 
+.header-pagina{
+    color: var(--header-color);
+}
 
 .icon{
     display: flex;
@@ -69,20 +98,20 @@ h3 {
 }
 
 
- .icon .luna{
+ .icon #luna{
     display: flex;
     justify-content: space-between;
     height: 30px;
     width: 30px;
-    background-color: var(--text-color);
+    background-color: var(--icon-color);
     border-radius: 50%;
     margin-right: 10px;
     
 }
 
-.icon .header-pagina{
+/* .icon .header-pagina{
     color: var(--text-color);
-}
+} */
 
 
 .container {
@@ -139,7 +168,7 @@ nav ul {
 }
 
 a{
-    color: var(--text-color);
+    color: var(--uno-color);
     text-decoration: none;
 }
 
@@ -149,6 +178,7 @@ a:hover {
 
 li {
     margin: 0.7rem;
+    color: var(--li-color);
 }
 
 .text {
@@ -156,7 +186,7 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--text-color);
+    color: var(--icon-color);
     font-size: 14px;
     padding: 10px;
     text-align: center;/* Para mejor legibilidad */
@@ -175,7 +205,9 @@ td, th {
     border-bottom: 1px solid #000;
     padding: 5px;
     text-align: left;
+    color: var(--li-color);
 }
+
 
 .logo {
     margin: 5px;
@@ -193,7 +225,7 @@ td, th {
 .pie-pagina {
     display: flex;
     align-items: center;
-    color: var(--text-color);
+    color: var(--pie-color);
 }
 
 
@@ -202,8 +234,8 @@ td, th {
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #0a21a5;
-    color: #fff;
+    background-color: var(--backToTop);
+    color: var( --text-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;

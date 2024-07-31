@@ -1,225 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>Document</title>
-  </head>
+    <title>Recetas Mundiales JMCG</title>
+    <link rel="stylesheet" href="css/styles.css">
+ </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <div class="logo">   
-          <img src="img/img2.png" alt="BitCook Logo" />
-        </div>
-        <div class="icon">
-        <p class="header-pagina">Envia tu receta</p>
-        <img id="luna"src="img/untitled.svg" alt="modoNoche">
-        </div>
-      </header>
-
-      <div class="imga" id="im">
-        <img src="img/hero.jpg" alt="Cooking ingredients" />
-        <div class="text">Lorem ipsum dolor, sit amet consectetur</div>
-      </div>
-
-      <nav >
-        <ul id="first">
-          <li class="uno"><a href="#receta1">Receta 1</a></li>
-          <li class="uno"><a href="#receta2">Receta 2</a></li>
-          <li class="uno"><a href="#receta3">Receta 3</a></li>
-          <li class="uno"><a href="#receta4">Receta 4</a></li>
-        </ul>
-      </nav>
-
-      <main>
-        <section class="receta receta1" id="receta1">
-          <a href="pagina1.html">
-          <h2>Pasta Boloñesa</h2>
-          </a>
-          <p>
-            Salsa de pasta a base de carne y verduras típica de la ciudad de Bolonia en Italia. Como veréis, no se trata de freír carne
-            y añadir salsa de tomate frito como vemos a menudo en casas de amigos, comedores y tristemente, también en algunos restaurantes.
-          </p>
-          <div id="img">
-            <img src="img/pasta.jpg" alt="Receta Pasta">
-          </div>
-          <div>
-            <h3>Ingredientes</h3>
-            <ul>
-              <li>4 tazas de agua (1000 ml)</li>
-              <li>1 ½ cucharadas de aceite (21 g)</li>
-              <li>3/4 libra de pasta espaguetis (375 g)</li>
-              <li>1 libra de carne molida magra (500 g)</li>
-              <li>1 sobre de BASE SALSA BOLOGNESA MAGGI (50 g)</li>
-              <li>1 ½ tazas de agua (375 ml)</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Valores Nutricionales</h3>
-            <table class="valores-nutricionales">
-              <tr>
-                <th>Calorias</th>
-                <td>277 Kcal</td>
-              </tr>
-              <tr>
-                <th>Carbohidratos</th>
-                <td>0g</td>
-              </tr>
-              <tr>
-                <th>Proteinas</th>
-                <td>20g</td>
-              </tr>
-              <tr>
-                <th>Grasas</th>
-                <td>277 Kcal</td>
-              </tr>
-            </table>
-          </div>
+    <div id="grid-container">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="img/img2.png" alt="BitCook Logo" />
+                </a>
+              </div>
+              <div class="icon">
+                <a href="">
+                <p class="header-pagina">Envia tu receta</p>
+                </a>
+                <img id="luna" src="img/untitled.svg" alt="" />
+              </div>
+        </header>
+        <section>
+            <div id="img-principal">
+                <h1>Recetas Mundiales <br> Julian M. Corredor G.</h1>
+            </div>
         </section>
-
-        <section class="receta receta2" id="receta2">
-          <h2>Receta 2</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
-            consectetur eius dolores ullam dolorum. Quia odit quas possimus
-            ratione ea quibusdam laborum aperiam necessitatibus maiores!
-            Praesentium mollitia libero eius repellat.
-          </p>
-          <div>
-            <h3>Ingredientes</h3>
-            <ul>
-              <li>Ingrediente 1</li>
-              <li>Ingrediente 2</li>
-              <li>Ingrediente 3</li>
-              <li>Ingrediente 4</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Valores Nutricionales</h3>
-            <table class="valores-nutricionales">
-              <tr>
-                <th>Calorias</th>
-                <td>277 Kcal</td>
-              </tr>
-              <tr>
-                <th>Carbohidratos</th>
-                <td>0g</td>
-              </tr>
-              <tr>
-                <th>Proteinas</th>
-                <td>20g</td>
-              </tr>
-              <tr>
-                <th>Grasas</th>
-                <td>277 Kcal</td>
-              </tr>
-            </table>
-          </div>
-        </section>
-
-        <section class="receta receta3" id="receta3">
-          <h2>Receta 3</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
-            consectetur eius dolores ullam dolorum. Quia odit quas possimus
-            ratione ea quibusdam laborum aperiam necessitatibus maiores!
-            Praesentium mollitia libero eius repellat.
-          </p>
-          <div>
-            <h3>Ingredientes</h3>
-            <ul>
-              <li>Ingrediente 1</li>
-              <li>Ingrediente 2</li>
-              <li>Ingrediente 3</li>
-              <li>Ingrediente 4</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Valores Nutricionales</h3>
-            <table class="valores-nutricionales">
-              <tr>
-                <th>Calorias</th>
-                <td>277 Kcal</td>
-              </tr>
-              <tr>
-                <th>Carbohidratos</th>
-                <td>0g</td>
-              </tr>
-              <tr>
-                <th>Proteinas</th>
-                <td>20g</td>
-              </tr>
-              <tr>
-                <th>Grasas</th>
-                <td>277 Kcal</td>
-              </tr>
-            </table>
-          </div>
-        </section>
-      </main>
-
-      <section class="receta receta4" id="receta4">
-        <h2>Receta 4</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
-          consectetur eius dolores ullam dolorum. Quia odit quas possimus
-          ratione ea quibusdam laborum aperiam necessitatibus maiores!
-          Praesentium mollitia libero eius repellat.
-        </p>
-        <div>
-          <h3>Ingredientes</h3>
-          <ul>
-            <li>Ingrediente 1</li>
-            <li>Ingrediente 2</li>
-            <li>Ingrediente 3</li>
-            <li>Ingrediente 4</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Valores Nutricionales</h3>
-          <table class="valores-nutricionales">
-            <tr>
-              <th>Calorias</th>
-              <td>277 Kcal</td>
-            </tr>
-            <tr>
-              <th>Carbohidratos</th>
-              <td>0g</td>
-            </tr>
-            <tr>
-              <th>Proteinas</th>
-              <td>20g</td>
-            </tr>
-            <tr>
-              <th>Grasas</th>
-              <td>277 Kcal</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-
-      
-
-      <footer>
-        <div class="logo">
-          <img src="img/img2.png" alt="BitCook" />
-        </div>
-        <p class="pie-pagina">© 2024 Bogota Julian Corredor</p>
-      </footer>
+        <article>
+            <div class="art">
+                <h3>Nuestras mejores recetas</h3>
+            </div>
+        </article>
+        
+        <main class="recipes">  
+            <div class="recipe-list">
+                <div class="recipe-card1">
+                    <img src="img/pasta.jpg" alt="Simple Omelette">
+                    <a href="pagina1.html">
+                    <h2>Pasta Boloñesa</h2>
+                    </a>
+                    <li>Total: 35 minutos</li>
+                    <li>Preparacion: 25 minutos</li>
+                    <li>Cooking: 30 minutos</li>
+                </div>
+                
+                <div class="recipe-card2">
+                    <img src="img/Posta-Negra.jpg" alt="Simple Omelette">
+                    <a href="">
+                    <h2>Posta Negra</h2>
+                    </a>
+                    <li>Total: 2 Horas 30 minutos</li>
+                    <li>Preparacion: 1 hora 20 minutos</li>
+                    <li>Cooking: 1 hora aprox</li>
+                </div>
+                <div class="recipe-card3">
+                    <img src="img/garlic-sauce.jpg" alt="Simple Omelette">
+                    <a href="">
+                    <h2>Salsa de Ajo</h2>
+                    </a>
+                    <li>Total: 35 minutos</li>
+                    <li>Preparacion: 25 minutos</li>
+                    <li>Cooking: 30 minutos</li>
+                </div>
+                <div class="recipe-card4">
+                    <img src="img/Estofado-de-Carne-Beef.webp" alt="Simple Omelette">
+                    <a href="">
+                    <h2>Estofado de Res</h2>
+                    </a>
+                    <li>Total: 35 minutos</li>
+                    <li>Preparacion: 25 minutos</li>
+                    <li>Cooking: 30 minutos</li>
+                </div>
+                <div class="recipe-card5">
+                    <img src="img/capon-relleno.webp" alt="Simple Omelette">
+                    <a href="">
+                    <h2>Bistec Encebollado</h2>
+                    </a>
+                    <li>Total: 35 minutos</li>
+                    <li>Preparacion: 25 minutos</li>
+                    <li>Cooking: 30 minutos</li>
+                </div>
+                <div class="recipe-card6">
+                    <img src="img/Bistec-a-caballo.jpg" alt="Simple Omelette">
+                    <a href="">
+                    <h2>Bistec a Caballo</h2>
+                    </a>
+                    <li>Total: 35 minutos</li>
+                    <li>Preparacion: 25 minutos</li>
+                    <li>Cooking: 30 minutos</li>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="logo">
+                <img src="img/img2.png" alt="BitCook" />
+              </div>
+              <p class="pie-pagina">© 2024 Bogota Julian Corredor</p>
+        </footer>
     </div>
-
-    <button id="backToTop">^</button>
 
     <script src="js/app.js"></script>
     <script src="js/modes.js"></script>
   </body>
-</html>
+</html> 

@@ -1,4 +1,4 @@
-var luna = document.getElementById("luna");
+const luna = document.getElementById("luna");
 
 luna.onclick = function(){
     document.body.classList.toggle("dark-mode");
@@ -7,4 +7,16 @@ luna.onclick = function(){
     }else{
         luna.src ="img/untitled.svg";
     }
+
+    if(document.body.classList.contains('dark-mode')){
+        localStorage.setItem('darkMode', 'true');
+    }else{
+        localStorage.setItem('darkMode', 'false');
+    }
+}
+
+if(localStorage.getItem('darkMode') === 'true'){
+    document.body.classList.add('dark-mode');
+}else{
+    document.body.classList.remove('dark-mode');
 }

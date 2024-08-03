@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 html {
@@ -66,7 +67,7 @@ h3 {
     
     /* background-color: rgb(97, 124, 231); */
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 60px 1fr 30px 1fr 1fr 60px;
+    grid-template-rows: auto 1fr 30px 1fr 1fr auto;
 
     margin: 10px;
 }
@@ -183,13 +184,6 @@ li {
 }
 
 
-
-
-/* .recipe-list {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr; */
-
 .recipe-list{
     margin-top: 10px;
     display: grid;
@@ -202,33 +196,15 @@ li {
 .recipe-list img{
     width: 100%;
     height: 250px;
+    border-radius: 9px;
 }
 
 .recipe-card1, .recipe-card2, .recipe-card3, .recipe-card4, .recipe-card5, .recipe-card6 {
     background-color: var(--text-color);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 9px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-/* .recipe-card1{
-    grid-area: 4/1/1/4;
-}
-.recipe-card2{
-    grid-area: 4/2/2/4;
-}
-.recipe-card3{
-    grid-area: 4/3/3/4;
-}
-.recipe-card4{
-    grid-area: 6/1/5/1;
-}
-.recipe-card5{
-    grid-area: 5/2/2/5;
-}
-.recipe-card6{
-    grid-area: 5/3/6/5;
-} */
 
 
 footer{
@@ -242,6 +218,28 @@ footer{
     color: var(--pie-color);
 }
 
+#backToTop {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    /* padding: 10px 20px; */
+    background-color: var(--backToTop);
+    color: var( --text-color);
+    border: none;
+    height: 20px;
+    width: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+#backToTop:hover {
+    background-color: #555;
+}
+
+
 
 @media screen and (max-width: 900px) {
     
@@ -250,9 +248,9 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(7,auto);
         height: 100vh;
-        margin: 0px;
+        margin: 0;
         box-sizing: border-box;
-        
+
         
 
     }
@@ -299,7 +297,9 @@ footer{
             grid-template-columns: 1fr;
             
         }
+    }
 
-        
+    #backToTop{
+        right: 5px;
     }
 }

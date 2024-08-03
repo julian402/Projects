@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 100) {
             backToTopButton.style.display = 'block';
         } else {
             backToTopButton.style.display = 'none';

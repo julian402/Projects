@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style-form.css">
+    <title>Formulario Envia tu receita</title>
+</head>
+<body>
+    <div id="grid-container">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="img/img2.png" alt="BitCook Logo" />
+                </a>
+              </div>
+              <div class="icon">
+                <a href="">
+                <p class="header-pagina">Envia tu receta</p>
+                </a>
+                <img id="luna" src="img/untitled.svg" alt="" />
+              </div>
+        </header>
+    <main>
+        <form method="post">
+            <div id="form-principal">
+                <div class="textContainer">
+                    <h1>Envianos tu Receta! </h1>
+                    <p>Dicen que todo se ve mejor con números impares de cosas, pero a veces pongo números pares, solo para molestar a los críticos. Ejercitar la imaginación, experimentar con talentos, ser creativo; estas cosas, para mí, son verdaderamente las ventanas del alma.</p>
+                </div>
+                <div class="inputContainer">
+                    <label for="nombre_receta" >Nombre de la Receta</label>
+                    <input type="text" name="nombre_receta" id="nombre_receta">
+                </div>
+                <div class="inputContainer">
+                    <label for="tiempo_receta"> Tiempo de Preparacion </label>
+                    <input type="text" name="tiempo_receta" id="tiempo_receta">
+                </div>
+                <div class="inputContainer">
+                    <label for="ingredientes"> Ingredientes </label>
+                    <input type="text" name="ingredientes" id="ingredientes">
+                </div>
+                <div class="inputContainer">
+                    <label for="instrucciones"> Instrucciones</label>
+                    <input type="text" name="instrucciones" id="instrucciones">
+                </div>
+                <div class="inputContainer">
+                    <input type="submit" value="Enviar" name="enviar" id="boton-enviar">
+                </div>
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="logo">
+            <img src="img/img2.png" alt="BitCook" />
+          </div>
+          <p class="pie-pagina">© 2024 Bogota Julian Corredor</p>
+    </footer>
+    </div>
+
+    <button id="backToTop">^</button>
+
+    <script src="js/app.js"></script>
+    <script src="js/modes.js"></script>
+</body>
+</html>

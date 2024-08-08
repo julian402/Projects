@@ -48,7 +48,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows:  60px 1fr 1fr 1fr auto;
+    grid-template-rows:  60px auto auto 60px;
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
@@ -150,6 +150,7 @@ section{
     border-radius: 10px;
     padding: 25px;
     grid-area: 2 / 2 / 3 / 4;
+    
     
 }
 .valores-nutricionales{

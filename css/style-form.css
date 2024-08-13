@@ -157,6 +157,8 @@ input{
     margin-top: 10px;
     flex-direction: column;
     margin-bottom: 15px; 
+    vertical-align: top;
+    text-align: left;
 }
 
 label {
@@ -185,6 +187,7 @@ label {
     background-color: var(--input-form);
     border: none;
     border-radius: 5px;
+    
 }
 
 #instrucciones {
@@ -194,6 +197,7 @@ label {
     border-radius: 5px;
 }
 
+
 #boton-enviar{
     width: 100px;
     height: 40px;
@@ -201,6 +205,11 @@ label {
     background-color: #255538;
     border: none;
     color: var(--header-color);
+    cursor: pointer;
+}
+
+#boton-enviar:hover{
+    background-color: #57876a;
 }
 
 footer{
